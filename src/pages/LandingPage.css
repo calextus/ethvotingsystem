@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0f1d2b;
+    color: #ffffff;
+  }
+  
+  .landing-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; /* Added padding for smaller screens */
+  }
+  
+  .navbar {
+    background-color: #5a6b7d;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .connect-button {
+    background-color: #d1d5db;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  .main-content {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  .create-panel-button {
+    background-color: #5a6b7d;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    font-size: 1rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column; /* Stack navbar elements */
+      text-align: center;
+    }
+  
+    .connect-button {
+      margin-top: 10px; /* Add spacing when stacked */
+      width: 100%; /* Make it full width on small screens */
+    }
+  
+    .logo {
+      font-size: 1.2rem; /* Adjust font size for smaller screens */
+    }
+  
+    .main-content {
+      padding: 10px; /* Add padding for better spacing */
+    }
+  
+    .create-panel-button {
+      width: 100%; /* Full width button for small screens */
+      font-size: 0.9rem; /* Adjust font size */
+      margin-top: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .navbar {
+      padding: 10px; /* Reduce padding for very small screens */
+    }
+  
+    .logo {
+      font-size: 1rem; /* Further reduce logo font size */
+    }
+  
+    .connect-button, .create-panel-button {
+      font-size: 0.8rem; /* Smaller button font size */
+      padding: 8px 15px; /* Adjust padding */
+    }
+  }
+  
