@@ -1,0 +1,77 @@
+/* Navbar container */
+.navbar {
+    background-color: #06223d;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Navbar title */
+  .navbar-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  
+  /* Navbar links container */
+  .navbar-links {
+    display: flex;
+    gap: 24px;
+  }
+  
+  /* Navbar links */
+  .navbar-link {
+    color: #f4f4f4;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-link:hover {
+    color: #ff7043; /* Color on hover */
+  }
+  
+  /* Wallet container */
+  .wallet-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Wallet address display */
+  .wallet-address {
+    font-size: 0.875rem;
+    color: #ff7043;
+    font-weight: 500;
+  }
+  
+  /* Connect Wallet button */
+  .connect-wallet-btn {
+    background-color: #ff7043;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .connect-wallet-btn:hover {
+    background-color: #ff5722;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar-links {
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 16px;
+    }
+  }
+  

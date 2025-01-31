@@ -1,16 +1,44 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import LandingPage from './pages/LandingPage';
-import Dashboard from './pages/Dashboard';
+import React from "react";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
-function App() {
+const App = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/Dashboard" element={<Dashboard />} />
-      </Routes>
-    </Router>
+    <div>
+      <Navbar />
+      <main>
+        <p>fgf</p>
+        <p>fgf</p>
+        <p>fgf</p>
+        <p>fgf</p>
+        <p>fgf</p>
+        <p>fgf</p>
+        <p>fgf</p>
+        <p>fgf</p>
+        <p>fgf</p>
+        <p>fgf</p>
+        <p>fgf</p>
+        <p>fgf</p>
+        <p>fgf</p>
+        <p>fgf</p>
+        <p>fgf</p>
+        <p>fgf</p>
+        <p>fgf</p>
+        <p>fgf</p>
+        <p>fgf</p>
+        <p>fgf</p>
+        <p>fgf</p>
+        <p>fgf</p>
+        <p>fgf</p>
+        <p>fgf</p>
+        <p>fgf</p>
+        <p>fgf</p>
+        <p>fgf</p>
+        <p>fgf</p>
+      </main>
+      <Footer />
+    </div>
   );
-}
+};
 
 export default App;
