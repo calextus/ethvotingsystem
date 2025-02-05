@@ -1,43 +1,22 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import HomePage from "./pages/HomePage";
+import PartyRegistry from "./pages/PartyRegistry"; // Ensure this component exists
 
 const App = () => {
   return (
-    <div>
+    <Router>
       <Navbar />
       <main>
-        <p>fgf</p>
-        <p>fgf</p>
-        <p>fgf</p>
-        <p>fgf</p>
-        <p>fgf</p>
-        <p>fgf</p>
-        <p>fgf</p>
-        <p>fgf</p>
-        <p>fgf</p>
-        <p>fgf</p>
-        <p>fgf</p>
-        <p>fgf</p>
-        <p>fgf</p>
-        <p>fgf</p>
-        <p>fgf</p>
-        <p>fgf</p>
-        <p>fgf</p>
-        <p>fgf</p>
-        <p>fgf</p>
-        <p>fgf</p>
-        <p>fgf</p>
-        <p>fgf</p>
-        <p>fgf</p>
-        <p>fgf</p>
-        <p>fgf</p>
-        <p>fgf</p>
-        <p>fgf</p>
-        <p>fgf</p>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/party-registry" element={<PartyRegistry />} />
+        </Routes>
       </main>
       <Footer />
-    </div>
+    </Router>
   );
 };
 

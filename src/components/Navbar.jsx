@@ -21,10 +21,10 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-title">LetVote</div>
       <div className="navbar-links">
-        <a href="#home" className="navbar-link">Home</a>
-        <a href="#voter-community" className="navbar-link">Voter Community</a>
-        <a href="#register-voter" className="navbar-link">Register (Voter)</a>
-        <a href="#register-candidate" className="navbar-link">Register (Candidate)</a>
+        <a href="HomePage.js" className="navbar-link">Home</a>
+        <a href="Community.js" className="navbar-link">Community</a>
+        <a href="Parties.js" className="navbar-link">Parties</a>
+        
       </div>
       <div className="wallet-container">
         {walletAddress ? (

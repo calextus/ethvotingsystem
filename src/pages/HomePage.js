@@ -1,25 +1,34 @@
-import { useRouter } from 'next/router';
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import "./HomePage.css";
 
-export default function HomePage() {
-  const router = useRouter();
+const HomePage = () => {
+  const navigate = useNavigate();
 
-  const handleCreatePanelClick = () => {
-    router.push('/register-candidate'); // Redirects to the Register Candidate page
+  const handleCreatePoll = () => {
+    navigate("/party-registry");
   };
 
   return (
     <div className="homepage-container">
-      <header className="header">
-        <h1>Welcome to LetVote, its safe and Secure</h1>
-      </header>
-      <button className="create-panel-button" onClick={handleCreatePanelClick}>
-        Create Panel
-      </button>
-      <div className="image-gallery">
-        <img src="/images/voting1.jpg" alt="People Voting" />
-        <img src="/images/voting2.jpg" alt="Voting is Power" />
-        <img src="/images/voting3.jpg" alt="Count Every Vote" />
+      <div className="hero-section">
+        <h1>Vote easy, Vote Safely</h1>
+        <p>LetVote is a safe and secure place to vote and create a poll.</p>
+        <button className="create-poll-btn" onClick={handleCreatePoll}>
+          Create Poll
+        </button>
+
+        <div className="image-grid">
+          <img src="/voters.jpg" alt="Voting" />
+          <img src="/2images.jpg" alt="Voting" />
+          <img src="/1Untitled.jpg" alt="Voting" />
+          <img src="/1Untitled.jpg" alt="Voting" />
+          <img src="/2images.jpg" alt="Voting" />
+          <img src="/voters.jpg" alt="Voting" />
+        </div>
       </div>
     </div>
   );
-}
+};
+
+export default HomePage;
