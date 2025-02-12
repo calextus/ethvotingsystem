@@ -1,0 +1,19 @@
+.community-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .address-list {
+    margin-top: 20px;
+  }
+  
+  .address-list p {
+    font-family: monospace;
+    font-size: 14px;
+  }
